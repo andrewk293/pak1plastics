@@ -129,7 +129,7 @@ footer{background:var(--navy);border-top:3px solid var(--gold);padding:28px 20px
 </nav>
 </header>
 <div id="page-home" class="page">
-<section class="hero"><h1>Premium Plastic Products</h1><div class="gold-divider"></div><p>Paint trays, bucket organizers, rollers, and more - manufactured with recycled post-consumer plastic right here in the USA.</p><div style="margin-top:24px;max-width:700px;margin-left:auto;margin-right:auto;border-radius:6px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.3);"><img src="images/Flag_of_the_United_States.jpg" alt="Made in the USA" style="width:100%;display:block;"></div></section>
+<section class="hero"><h1>American Made Products</h1><div class="gold-divider"></div><p style="font-size:1.25rem;font-weight:600;color:#FFFFFF;max-width:700px;margin:0 auto;">Paint trays, buckets, DIY tools, and more - manufactured with recycled post-consumer plastic right here in the USA.</p><div style="margin-top:24px;max-width:700px;margin-left:auto;margin-right:auto;border-radius:6px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.3);"><img src="images/Flag_of_the_United_States.jpg" alt="Made in the USA" style="width:100%;display:block;"></div></section>
 <section class="products-section"><h2 class="section-title">Featured Products</h2><div class="products-grid" id="featured-grid"></div></section>
 <section class="callout"><h2>Manufacturing Power</h2><div class="gold-divider"></div><p>We produce tens of thousands of units daily across our full product line. Custom color, branding, and packaging available for all products.</p></section>
 <section class="capacity-section"><h2 class="section-title">Daily Production Capacity</h2><div class="capacity-grid">
@@ -273,6 +273,7 @@ document.getElementById('modal').classList.add('open');
 document.body.style.overflow='hidden';
 }
 
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow='';}
 function openLightbox(src){
 var lb=document.getElementById('lightbox');
 document.getElementById('lightbox-img').src=src;
